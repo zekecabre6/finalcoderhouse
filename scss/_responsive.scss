@@ -1,0 +1,214 @@
+$tablet:768px;
+$mobile:600px;
+
+
+
+@mixin responsive ($medida) {
+    @if $medida == mobile {
+        @media (max-width: $mobile) {
+            @content ;
+        }
+        
+    }
+    @else if $medida == tablet {
+        @media (max-width: $tablet) {
+            @content ;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*responsive todo el html/**
+
+/*responsive celu*/
+@media screen and (max-width: 992px) {
+
+    /*notebook*/
+    html,
+    body {
+        width: 100%;
+    }
+
+    .logo {
+        margin: auto;
+    }
+
+    .header {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /*tablet*/
+    html,
+    body {
+        width: 100%;
+    }
+
+    .logo {
+        margin: auto;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .navcontent {
+        width: 100%;
+    }
+
+    li {
+        font-size: 10px;
+    }
+
+    .form {
+        width: 90%;
+        text-align: center;
+        border: none;
+    }
+
+    .carta_1,
+    .carta_2,
+    .carta_3 {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .grid {
+        grid-gap: 2rem 0;
+        padding: 10px;
+    }
+
+    .grid {
+        grid-gap: 2rem 0;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    p {
+        padding: 10px 10px 10px 10px;
+    }
+
+    /* Con este selector indicamos que ese estilo debe aplicarse a */
+    /* TODOS los elementos que sean hijos directos de la grilla */
+    .grid>* {
+        grid-column-end: span 12;
+    }
+
+    /* El primer valor corresponde al hueco entre filas */
+    /* El segundo valor corresponde al hueco entre columnas */
+    .grid {
+        grid-gap: 2rem 0;
+    }
+
+    #flecha-hacia-arriba {
+        max-width: 4em;
+        max-height: 4em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /*phone*/
+    .none {
+        display: none;
+    }
+
+    html,
+    body {
+        width: 100%;
+    }
+
+    .nav {
+        display: inline;
+    }
+
+    .container-fluid {
+        justify-content: center !important;
+    }
+
+    .logo {
+        margin: auto;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .navcontent {
+        width: 100%;
+    }
+
+    li {
+        font-size: 10px;
+    }
+
+    .form {
+        width: 90%;
+        text-align: center;
+        border: none;
+    }
+
+    .carta_1,
+    .carta_2,
+    .carta_3 {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .grid {
+        grid-gap: 2rem 0;
+        padding: 10px;
+    }
+
+    .grid {
+        grid-gap: 2rem 0;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    p {
+        padding: 10px 10px 10px 10px;
+    }
+
+    /* Con este selector indicamos que ese estilo debe aplicarse a */
+    /* TODOS los elementos que sean hijos directos de la grilla */
+    .grid>* {
+        grid-column-end: span 12;
+    }
+
+    /* El primer valor corresponde al hueco entre filas */
+    /* El segundo valor corresponde al hueco entre columnas */
+    .grid {
+        grid-gap: 2rem 0;
+    }
+
+    #flecha-hacia-arriba {
+        max-width: 4em;
+        max-height: 4em;
+    }
+}

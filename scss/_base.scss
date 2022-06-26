@@ -1,0 +1,25 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    transition: all 0.3s;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    vertical-align: baseline;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+}
